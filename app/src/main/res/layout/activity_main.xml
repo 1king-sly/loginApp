@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
 
    <EditText
@@ -15,8 +15,10 @@
        android:layout_margin="10dp"
        android:background="#30ffffff"
        android:backgroundTint="#30ffffff"
+       android:drawableLeft="@drawable/baseline_person_24"
+       android:drawablePadding="10dp"
        android:ems="10"
-       android:hint="NAME"
+       android:hint="USERNAME"
        android:inputType="textPersonName"
        android:paddingTop="10dp"
        android:paddingBottom="10dp"
@@ -29,9 +31,105 @@
        app:layout_constraintHorizontal_bias="0.213"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.077"
-       android:drawableLeft="@drawable/baseline_person_24"
+       app:layout_constraintVertical_bias="0.077" />
+
+   <EditText
+       android:id="@+id/etPassword"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:background="#30ffffff"
+       android:backgroundTint="#30ffffff"
+       android:drawableLeft="@drawable/baseline_lock_24"
        android:drawablePadding="10dp"
-       />
+       android:ems="10"
+       android:hint="Password"
+       android:inputType="textPassword"
+       android:paddingTop="10dp"
+       android:paddingBottom="10dp"
+       android:textSize="34sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.157"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.301" />
+
+   <Button
+       android:id="@+id/btnSubmit"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:drawableLeft="@drawable/baseline_lock_open_24"
+       android:text="LOGIN"
+       android:paddingLeft="0dp
+"
+       android:textAlignment="center"
+       android:textSize="34sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <TextView
+       android:id="@+id/textView3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Sign in with"
+       android:textColor="@color/white"
+       android:textSize="24sp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.435"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.832" />
+
+
+   <TextView
+       android:id="@+id/textView4"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="364dp"
+       android:layout_marginEnd="8dp"
+       android:text="Forgot Password?"
+       android:textColor="@color/white"
+       android:textSize="20sp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <LinearLayout
+       android:layout_width="0dp"
+       android:layout_height="60dp"
+       android:layout_margin="10dp"
+       android:orientation="horizontal"
+       android:paddingLeft="0dp"
+       android:textAlignment="center"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent">
+
+      <ImageView
+          android:id="@+id/imageView4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          app:srcCompat="@drawable/google" />
+
+      <ImageView
+          android:id="@+id/imageView5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          app:srcCompat="@drawable/facebook" />
+
+      <ImageView
+          android:id="@+id/imageView6"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          app:srcCompat="@drawable/twitter" />
+   </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
